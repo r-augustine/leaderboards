@@ -15,9 +15,8 @@ export default async function Home() {
   const bottom = board.slice(take)
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start w-full">
-
+    <div className="grid grid-rows-[40px_1fr_40px] items-start justify-items-center min-h-screen p-16 pb-20 gap-4 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-8 row-start-2 w-full max-w-6xl">
         <div className="flex items-end justify-center space-x-8 w-full mb-20">
           <div className="bg-gradient-to-b from-[#1f7159] to-[#144d3d] shadow-[0_10px_30px_rgba(255,236,188,0.5)] 
               rounded-xl p-6 text-center text-white w-40 min-h-[220px] grid grid-cols-1 items-center">
