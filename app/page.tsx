@@ -10,14 +10,15 @@ import SearchList from "@/components/SearchList";
 export const revalidate = 60
 
 const getBoard = async () => {
-  return boards.at(-1)?.sort((a, b) => b.points - a.points)
+  const board = boards.at(-1) ?? []
+  return board.sort((a, b) => b.points - a.points)
 }
 
 export default async function Home() {
   const board = await getBoard()
-  const take = (board?.length ?? 0) <= 2 ? 1 : 3
-  const top = board?.slice(0, take)
-  const bottom = board?.slice(take)
+  const take = (board.length ?? 0) <= 2 ? 1 : 3
+  const top = board.slice(0, take)
+  const bottom = board.slice(take)
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

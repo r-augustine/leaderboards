@@ -3,10 +3,10 @@
 import { useState } from "react"
 
 
-export default function SearchList({ data = [] }) {
+export default function SearchList({ data = [] }: { data: { name: string, points: number, gender: string }[] }) {
     const [users, setUsers] = useState(data)
 
-    const onChange = (e) => {
+    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         console.log("search user: ", e.target.value)
         setUsers(data.filter(u => u.name.toLowerCase().includes(e.target.value)))
     }
