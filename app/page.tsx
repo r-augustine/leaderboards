@@ -1,11 +1,5 @@
-// import Image from "next/image";
 import { boards } from "@/data/board";
 import SearchList from "@/components/SearchList";
-
-// interface User {
-//   name: string,
-//   points: number
-// }
 
 export const revalidate = 60
 
