@@ -16,7 +16,7 @@ const getBoard = async () => {
 
 export default async function Home() {
   const board = await getBoard()
-  const take = (board.length ?? 0) <= 2 ? 1 : 3
+  const take = (board.length) <= 2 ? 1 : 3
   const top = board.slice(0, take)
   const bottom = board.slice(take)
 
@@ -56,7 +56,7 @@ export default async function Home() {
 
         </div>
 
-        <SearchList data={bottom} />
+        <SearchList data={bottom} offset={top.length} />
 
       </main>
     </div>
