@@ -16,7 +16,7 @@ export const boards = [
             "gender": "M"
         },
         {
-            "name": "Klause Murder",
+            "name": "Klause Johnson",
             "points": 600,
             "gender": "M"
         },
