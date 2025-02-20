@@ -8,7 +8,7 @@ export default function SearchList({ data = [], offset = 0 }: { offset: number, 
     const [term, setTerm] = useState("")
     const users = data.filter(u => u.name.toLowerCase().includes(term))
 
-    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const onInput = (e: React.ChangeEvent<HTMLInputElement>) => {
         console.log("search user: ", e.target.value.toLowerCase())
         setTerm(e.target.value.toLowerCase())
     }
@@ -16,7 +16,7 @@ export default function SearchList({ data = [], offset = 0 }: { offset: number, 
     return <>
         <div className="grid grid-cols-[1fr_2fr_1fr] w-full my-8">
             <div className="col-start-2">
-                <input placeholder="Search..." className="w-full px-3 py-2 rounded-md" onChange={onChange} />
+                <input placeholder="Search..." value={term} className="w-full px-3 py-2 rounded-md" onInput={onInput} />
             </div>
         </div>
 
