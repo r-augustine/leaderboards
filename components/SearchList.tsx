@@ -10,7 +10,7 @@ export default function SearchList({ data = [], offset = 0 }: { offset: number, 
 
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         console.log("search user: ", e.target.value.toLowerCase())
-        setTerm(e.target.value)
+        setTerm(e.target.value.toLowerCase())
     }
 
     return <>
