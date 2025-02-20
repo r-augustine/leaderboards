@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { boards } from "@/data/board";
 import SearchList from "@/components/SearchList";
 
