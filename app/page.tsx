@@ -27,7 +27,7 @@ export default async function Home() {
           <div className="bg-gradient-to-b from-[#1f7159] to-[#144d3d] shadow-[0_10px_30px_rgba(255,236,188,0.5)] 
               rounded-xl p-6 text-center text-white w-40 min-h-[220px] grid grid-cols-1 items-center">
             <div>
-              <img src="avatar2.png" alt="Second Place" className="w-16 h-16 mx-auto rounded-full border-4 border-[#ffecbc]" />
+              {/* <img src="avatar2.png" alt="Second Place" className="w-16 h-16 mx-auto rounded-full border-4 border-[#ffecbc]" /> */}
               <h3 className="mt-3 text-lg font-bold">{top[1].name}</h3>
               <p className="text-[#ffecbc] font-semibold">{top[1].points}</p>
             </div>
@@ -36,7 +36,7 @@ export default async function Home() {
 
           <div className="bg-gradient-to-b from-[#1f7159] to-[#0e3a2d] shadow-[0_20px_40px_rgba(255,236,188,0.8)] 
               rounded-xl p-8 text-center text-white w-40 scale-[1.25] min-h-[220px] grid grid-cols-1 items-center">
-            <img src="avatar1.png" alt="First Place" className="w-20 h-20 mx-auto rounded-full border-4 border-[#ffecbc]" />
+            {/* <img src="avatar1.png" alt="First Place" className="w-20 h-20 mx-auto rounded-full border-4 border-[#ffecbc]" /> */}
             <div>
               <h3 className="mt-3 text-lg font-bold">{top[0].name}</h3>
               <p className="text-[#ffecbc] font-semibold">{top[0].points}</p>
@@ -47,7 +47,7 @@ export default async function Home() {
           <div className="bg-gradient-to-b from-[#1f7159] to-[#144d3d] shadow-[0_10px_30px_rgba(255,236,188,0.5)] 
               rounded-xl p-6 text-center text-white w-40 min-h-[220px] grid grid-cols-1 items-center">
             <div>
-              <img src="avatar3.png" alt="Third Place" className="w-16 h-16 mx-auto rounded-full border-4 border-[#ffecbc]" />
+              {/* <img src="avatar3.png" alt="Third Place" className="w-16 h-16 mx-auto rounded-full border-4 border-[#ffecbc]" /> */}
               <h3 className="mt-3 text-lg font-bold">{top[2].name}</h3>
               <p className="text-[#ffecbc] font-semibold">{top[2].points}</p>
             </div>
