@@ -4,11 +4,13 @@ import { useState } from "react"
 
 
 export default function SearchList({ data = [], offset = 0 }: { offset: number, data: { name: string, points: number, gender: string }[] }) {
-    const [users, setUsers] = useState(data)
+    // const [users, setUsers] = useState(data)
+    const [term, setTerm] = useState("")
+    const users = data.filter(u => u.name.toLowerCase().includes(term))
 
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log("search user: ", e.target.value)
-        setUsers(data.filter(u => u.name.toLowerCase().includes(e.target.value)))
+        console.log("search user: ", e.target.value.toLowerCase())
+        setTerm(e.target.value)
     }
 
     return <>
@@ -16,6 +18,10 @@ export default function SearchList({ data = [], offset = 0 }: { offset: number, 
             <div className="col-start-2">
                 <input placeholder="Search..." className="w-full px-3 py-2 rounded-md" onChange={onChange} />
             </div>
+        </div>
+
+        <div>
+            <pre>{JSON.stringify(term, null, 2)}</pre>
         </div>
 
         <div className="w-full grid grid-cols-1">
