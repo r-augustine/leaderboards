@@ -12,7 +12,7 @@ export default function SearchList({ data = [], offset = 0 }: { offset: number, 
     }
 
     return <>
-        <div className="grid grid-cols-[1fr_2fr_1fr] w-full my-8">
+        <div className="grid grid-cols-[1fr_2fr_1fr] sm:grid-cols-[0.1fr_1fr_0.1fr] w-full my-8">
             <div className="col-start-2">
                 <input placeholder="Search..." value={term} className="search w-full px-4 py-3 rounded-md bg-[#17181F] placeholder-[#54575C]" onInput={onInput} />
             </div>

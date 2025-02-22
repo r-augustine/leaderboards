@@ -18,7 +18,7 @@ export default async function Home() {
     <div className="grid grid-rows-[40px_1fr_40px] items-start justify-items-center min-h-screen p-16 pb-20 gap-4 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-12 row-start-2 w-full max-w-12xl">
 
-        <div className="flex items-center justify-around w-[25%] mx-auto">
+        <div className="flex items-center justify-around w-[100%] md:w-[80%] lg:w-[45%] mx-auto">
           <div className="flex flex-col gap-8 items-center">
             <svg width="70" height="81" viewBox="0 0 70 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.3]">
               <path d="M0.757744 59.7898V20.048L35 0.575193L69.2423 20.048V59.7898L35 79.66L0.757744 59.7898Z" stroke="#9B9D9A" />
