@@ -30,6 +30,16 @@ export const boards = [
             "points": 800,
             "gender": "M"
         },
+        {
+            "name": "Jason",
+            "points": 100,
+            "gender": "M"
+        },
+        {
+            "name": "Anna",
+            "points": 300,
+            "gender": "M"
+        },
     ],
     // [
     //     {
