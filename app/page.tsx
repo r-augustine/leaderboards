@@ -5,7 +5,7 @@ export const revalidate = 60
 
 const getBoard = async () => {
   const board = boards.at(-1) ?? []
-  return board.sort((a, b) => b.points - a.points)
+  return board.sort((a, b) => b.points - a.points).map((user, index) => ({ ...user, rank: index + 1 }))
 }
 
 export default async function Home() {
@@ -79,8 +79,7 @@ export default async function Home() {
           </svg>
         </div>
 
-        <SearchList data={bottom} offset={top.length} />
-
+        <SearchList data={bottom} />
       </main>
     </div>
   );

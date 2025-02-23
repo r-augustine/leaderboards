@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 
-export default function SearchList({ data = [], offset = 0 }: { offset: number, data: { name: string, points: number, gender: string }[] }) {
+export default function SearchList({ data = [] }: { data: { name: string, points: number, gender: string, rank: number }[] }) {
     const [term, setTerm] = useState("")
     const users = data.filter(u => u.name.toLowerCase().includes(term.toLowerCase()))
 
@@ -23,7 +23,7 @@ export default function SearchList({ data = [], offset = 0 }: { offset: number, 
             </div>}
             {users?.map((user, index) => (
                 <div key={index} className="grid grid-cols-[0.08fr_2fr] odd:bg-[#17181F] px-5 py-5 items-center rounded-md">
-                    <span className="pr-4 text-[#54575C]">#{index + 1 + offset}</span>
+                    <span className="pr-4 text-[#54575C]">#{user.rank}</span>
                     <div className="flex-1">
                         <div className="pl-4 flex justify-between">
                             <span className="font-bold">{user.name}</span>
