@@ -28,3 +28,20 @@ body {
 .search:focus {
   outline: none;
 }
+
+.gradient-text {
+  background: linear-gradient(to bottom, #CD7D2E, #BC4A1B);
+
+  color: transparent;
+
+  /* Standard syntax */
+  mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 1) 100%);
+
+  /* WebKit browsers (Safari, Chrome) */
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 1) 100%);
+
+  background-clip: text;
+  /* Needed for gradient text effect */
+  -webkit-background-clip: text;
+  /* Safari & Chrome */
+}

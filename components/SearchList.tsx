@@ -27,7 +27,7 @@ export default function SearchList({ data = [] }: { data: { name: string, points
                     <div className="flex-1">
                         <div className="pl-4 flex justify-between">
                             <span className="font-bold">{user.name}</span>
-                            <span className="font-medium bg-gradient-to-b from-[#CD7D2E] to-[#BC4A1B] bg-clip-text text-transparent">{user.points}</span>
+                            <span className="font-medium gradient-text">{user.points}</span>
                         </div>
                     </div>
                 </div>
