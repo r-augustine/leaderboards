@@ -40,7 +40,7 @@ export default async function Home() {
             </svg>
             <div className="flex flex-col gap-1 items-center">
               <div className="text-lg">{top[1].name}</div>
-              <div className="text-2xl tracking-wide font-bold bg-gradient-to-b from-[#CD7D2E] to-[#BC4A1B] bg-clip-text text-transparent">{top[1].points}</div>
+              <div className="text-2xl tracking-wide font-bold gradient-text">{top[1].points}</div>
             </div>
           </div>
           <div className="flex flex-col gap-12 items-center">
@@ -50,7 +50,7 @@ export default async function Home() {
             </svg>
             <div className="flex flex-col gap-1 items-center">
               <div className="text-lg">{top[0].name}</div>
-              <div className="text-2xl tracking-wide font-bold bg-gradient-to-b from-[#CD7D2E] to-[#BC4A1B] bg-clip-text text-transparent">{top[0].points}</div>
+              <div className="text-2xl tracking-wide font-bold gradient-text">{top[0].points}</div>
             </div>
           </div>
           <div className="flex flex-col gap-8 items-center">
@@ -60,7 +60,7 @@ export default async function Home() {
             </svg>
             <div className="flex flex-col gap-1 items-center">
               <div className="text-lg">{top[2].name}</div>
-              <div className="text-2xl tracking-wide font-bold bg-gradient-to-b from-[#CD7D2E] to-[#BC4A1B] bg-clip-text text-transparent">{top[2].points}</div>
+              <div className="text-2xl tracking-wide font-bold gradient-text">{top[2].points}</div>
             </div>
           </div>
           <svg width="100" height="205" viewBox="0 0 100 205" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.2] md:scale-[1.5] lg:scale-[1.6]">
