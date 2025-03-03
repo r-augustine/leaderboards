@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
 
 
@@ -23,10 +24,18 @@ export default function SearchList({ data = [] }: { data: { name: string, points
             </div>}
             {users?.map((user, index) => (
                 <div key={index} className="grid grid-cols-[0.08fr_2fr] odd:bg-[#17181F] px-5 py-5 items-center rounded-md">
-                    <span className="pr-4 text-[#54575C]">#{user.rank}</span>
+                    <span className="pr-4 text-[#54575C] border-r border-r-[#54575C]">#{user.rank}</span>
                     <div className="flex-1">
-                        <div className="pl-4 flex justify-between">
-                            <span className="font-bold">{user.name}</span>
+                        <div className="pl-4 flex justify-between items-center">
+                            <div className="flex gap-4 items-center">
+                                <div className="relative">
+                                    <svg className="absolute scale-[0.62] -top-[22] -left-4" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.5 72.3402V24.1753L42 0.575193L83.5 24.1753V72.3402L42 96.4219L0.5 72.3402Z" stroke="#54575C" />
+                                    </svg>
+                                    <Image src='/cool.svg' alt="first" width={50} height={50} className="img-mask top-three small-mask" />
+                                </div>
+                                <span className="font-bold">{user.name}</span>
+                            </div>
                             <span className="font-medium gradient-text">{user.points}</span>
                         </div>
                     </div>

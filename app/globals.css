@@ -45,3 +45,38 @@ body {
   -webkit-background-clip: text;
   /* Safari & Chrome */
 }
+
+
+
+.img-mask {
+  display: inline-block;
+  mask-image: url("/placement-mask.svg");
+  -webkit-mask-image: url("/placement-mask.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.small-mask {
+  mask-size: 35;
+  -webkit-mask-size: 35;
+  mask-position: center 5;
+  -webkit-mask-position: center 5;
+  outline: 5px solid greenyellow;
+  outline-offset: 10px;
+  background: red;
+}
+
+.big-mask {
+  mask-size: 80;
+  -webkit-mask-size: 80;
+  mask-position: center 15;
+  -webkit-mask-position: center 15;
+}
+
+.top-one {
+  transform: scale(1.5)
+}
+
+.top-three {
+  transform: scale(1.2);
+}

@@ -1,5 +1,6 @@
 import { boards } from "@/data/board";
 import SearchList from "@/components/SearchList";
+import Image from "next/image";
 
 export const revalidate = 60
 
@@ -34,30 +35,46 @@ export default async function Home() {
             </defs>
           </svg>
           <div className="flex flex-col gap-8 items-center">
-            <svg width="70" height="81" viewBox="0 0 70 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.3]">
+            {/* <svg width="70" height="81" viewBox="0 0 70 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.3]">
               <path d="M0.757744 59.7898V20.048L35 0.575193L69.2423 20.048V59.7898L35 79.66L0.757744 59.7898Z" stroke="#9B9D9A" />
               <path d="M6.87532 23.1158L35 6.61758L63.1247 23.1158V56.7856L35 73.6205L6.87532 56.7856V23.1158Z" fill="#BC4A1B" />
-            </svg>
+            </svg> */}
+
+            <div className="relative">
+              <svg className="absolute scale-[1.4] left-[13] top-[15]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 72.3402V24.1753L42 0.575193L83.5 24.1753V72.3402L42 96.4219L0.5 72.3402Z" stroke="#9B9D9A" />
+              </svg>
+
+              <Image src='/cool.svg' alt="first" width={110} height={110} className="img-mask top-three big-mask" />
+            </div>
             <div className="flex flex-col gap-1 items-center">
               <div className="text-lg">{top[1].name}</div>
               <div className="text-2xl tracking-wide font-bold gradient-text">{top[1].points}</div>
             </div>
           </div>
           <div className="flex flex-col gap-12 items-center">
-            <svg width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.75]">
-              <path d="M0.5 72.3402V24.1753L42 0.575193L83.5 24.1753V72.3402L42 96.4219L0.5 72.3402Z" stroke="#F8B559" />
-              <path d="M8 27.9447L42 8L76 27.9447V68.6482L42 89L8 68.6482V27.9447Z" fill="#BC4A1B" />
-            </svg>
+            <div className="relative">
+              <svg className="absolute scale-[1.7] left-[13] top-[16]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 72.3402V24.1753L42 0.575193L83.5 24.1753V72.3402L42 96.4219L0.5 72.3402Z" stroke="#FFB464" />
+              </svg>
+              <Image src='/cool.svg' alt="first" width={110} height={110} className="img-mask top-one big-mask" />
+            </div>
             <div className="flex flex-col gap-1 items-center">
               <div className="text-lg">{top[0].name}</div>
               <div className="text-2xl tracking-wide font-bold gradient-text">{top[0].points}</div>
             </div>
           </div>
           <div className="flex flex-col gap-8 items-center">
-            <svg width="70" height="81" viewBox="0 0 70 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.3]">
+            {/* <svg width="70" height="81" viewBox="0 0 70 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.3]">
               <path d="M0.757744 59.7898V20.048L35 0.575194L69.2423 20.048V59.7898L35 79.66L0.757744 59.7898Z" stroke="#DE640C" />
               <path d="M6.87532 23.1158L35 6.61758L63.1247 23.1158V56.7856L35 73.6205L6.87532 56.7856V23.1158Z" fill="#BC4A1B" />
-            </svg>
+            </svg> */}
+            <div className="relative">
+              <svg className="absolute scale-[1.4] left-[13] top-[15]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 72.3402V24.1753L42 0.575193L83.5 24.1753V72.3402L42 96.4219L0.5 72.3402Z" stroke="#DC6D05" />
+              </svg>
+              <Image src='/cool.svg' alt="first" width={110} height={110} className="img-mask top-three big-mask" />
+            </div>
             <div className="flex flex-col gap-1 items-center">
               <div className="text-lg">{top[2].name}</div>
               <div className="text-2xl tracking-wide font-bold gradient-text">{top[2].points}</div>
@@ -78,7 +95,6 @@ export default async function Home() {
             </defs>
           </svg>
         </div>
-
         <SearchList data={bottom} />
       </main>
     </div>
