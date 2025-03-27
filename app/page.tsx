@@ -35,7 +35,7 @@ export default async function Home() {
           </svg>
           <div className="flex flex-col gap-8 items-center">
             <div className="relative">
-              <svg className="absolute scale-[1.4] left-[-8] top-[-8]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="absolute scale-[1.4] left-[-8px] top-[-8px]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 72.3402V24.1753L42 0.575193L83.5 24.1753V72.3402L42 96.4219L0.5 72.3402Z" stroke="#9B9D9A" />
               </svg>
               <svg width="68" height="81" viewBox="0 0 68 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.45]">
@@ -140,7 +140,7 @@ export default async function Home() {
           </div>
           <div className="flex flex-col gap-12 items-center">
             <div className="relative">
-              <svg className="absolute scale-[1.7] left-[-8] top-[-8]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="absolute scale-[1.7] left-[-8px] top-[-8px]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 72.3402V24.1753L42 0.575193L83.5 24.1753V72.3402L42 96.4219L0.5 72.3402Z" stroke="#FFB464" />
               </svg>
               <svg width="68" height="81" viewBox="0 0 68 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.79]">
@@ -245,7 +245,7 @@ export default async function Home() {
           </div>
           <div className="flex flex-col gap-8 items-center">
             <div className="relative">
-              <svg className="absolute scale-[1.4] left-[-8] top-[-8]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="absolute scale-[1.4] left-[-8px] top-[-8px]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 72.3402V24.1753L42 0.575193L83.5 24.1753V72.3402L42 96.4219L0.5 72.3402Z" stroke="#DC6D05" />
               </svg>
               <svg width="68" height="81" viewBox="0 0 68 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[1.45]">

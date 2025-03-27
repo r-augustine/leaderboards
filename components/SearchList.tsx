@@ -28,7 +28,7 @@ export default function SearchList({ data = [] }: { data: { name: string, points
                         <div className="pl-4 flex justify-between items-center">
                             <div className="flex gap-4 items-center">
                                 <div className="relative">
-                                    <svg className="absolute scale-[0.62] -top-[8] -left-[8]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className="absolute scale-[0.62] -top-[8px] -left-[8px]" width="84" height="97" viewBox="0 0 84 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.5 72.3402V24.1753L42 0.575193L83.5 24.1753V72.3402L42 96.4219L0.5 72.3402Z" stroke="#54575C" />
                                     </svg>
                                     <svg width="68" height="81" viewBox="0 0 68 81" fill="none" xmlns="http://www.w3.org/2000/svg" className="scale-[0.6]">
