@@ -14,6 +14,24 @@
   }
 } */
 
+.kavoon-regular {
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
