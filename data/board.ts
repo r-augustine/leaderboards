@@ -1,80 +1,39 @@
 export const boards = [
     [
         {
-            "name": "Jane Jane",
-            "points": 12000,
+            "name": "Andrea Bothwell",
+            "points": 70,
             "gender": "F"
         },
         {
-            "name": "John John",
-            "points": 1500,
+            "name": "Audrey Hill",
+            "points": 70,
+            "gender": "F"
+        },
+        {
+            "name": "Chantell Ebanks",
+            "points": 120,
+            "gender": "F"
+        },
+        {
+            "name": "Charisse Dixon",
+            "points": 60,
+            "gender": "F"
+        },
+        {
+            "name": "Priscilla Powery-Livingston",
+            "points": 50,
+            "gender": "F"
+        },
+        {
+            "name": "Ricardo Augustine",
+            "points": 190,
             "gender": "M"
         },
         {
-            "name": "Luther Vandros",
-            "points": 300,
+            "name": "Travis Ritch",
+            "points": 40,
             "gender": "M"
-        },
-        {
-            "name": "Klause Johnson",
-            "points": 600,
-            "gender": "M"
-        },
-        {
-            "name": "Viktor Hargrave",
-            "points": 900,
-            "gender": "M"
-        },
-        {
-            "name": "Five",
-            "points": 800,
-            "gender": "M"
-        },
-        {
-            "name": "Jason",
-            "points": 100,
-            "gender": "M"
-        },
-        {
-            "name": "Anna",
-            "points": 300,
-            "gender": "M"
-        },
+        }
     ],
-    // [
-    //     {
-    //         "name": "Jane",
-    //         "points": 1200,
-    //         "gender": "F"
-    //     },
-    //     {
-    //         "name": "John",
-    //         "points": 1500,
-    //         "gender": "M"
-    //     },
-    //     {
-    //         "name": "Luther",
-    //         "points": 300,
-    //         "gender": "M"
-    //     },
-    // ],
-    // [
-    //     {
-    //         "name": "Jane",
-    //         "points": 1200,
-    //         "gender": "F"
-    //     },
-    //     {
-    //         "name": "John",
-    //         "points": 1500,
-    //         "gender": "M"
-    //     },
-    // ],
-    // [
-    //     {
-    //         "name": "Jane",
-    //         "points": 1200,
-    //         "gender": "F"
-    //     },
-    // ]
 ]
